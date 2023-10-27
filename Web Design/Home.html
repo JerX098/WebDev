@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm">
+                    <h1>Jerry Setiawan</h1>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <button type="button" class="btn btn-outline-secondary" onclick="scrollToSection('about')">About Me</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="scrollToSection('skill')">Skill</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="scrollToSection('contact')">Contact</button>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="spacer"></div>
+
+    <section class="about" id="about">
+        <img src="images/WhatsApp Image 2023-10-27 at 17.49.19 (1).jpeg">
+        <div class="right">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah Jerry Setiawan yang merupakan seorang Mahasiswa Semester 5 jurusan Teknik Informatika di Universitas Tarumanagara. Saya tertarik dengan berbagai hal yang berkaitan dengan komputer baik itu Perangkat Lunak maupun Perangkat Keras. Saya dapat berkomunikasi dengan baik, dan juga dapat berkerja sama dengan tim. Serta saya juga berkeinginan keras untuk mempelajari hal hal baru.</p>
+        </div>
+    </section>
+
+    <section class="skill" id="skill">
+        <h2>Keahlian Yang Dimiliki</h2>
+        <p class="card-text" style="font-size: 20px;">Saya memiliki beberapa keahlian seperti berikut ini :</p>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light" onclick="changeDescription('Hard Skill', ['C# & C++ Programming Language', 'Java Programming Language', 'HTML Programming Language', 'CSS Programming Language', 'JavaScript Programming Language', 'Python Programming Language', 'Oracle Database', 'Unity', 'Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', 'Canva', 'Figma' ])">Hard Skill</button>
+
+
+            <button type="button" class="btn btn-light" onclick="changeDescription('Soft Skill', ['Teliti', 'Jujur', 'Dapat Bekerja Sama dengan Tim', 'Dapat Berkomunikasi dengan Baik', 'Manajemen Waktu yang Baik', 'Keinginan Belajar yang Tinggi'])">Soft Skill</button>
+          </div>
+        <!-- <button type="button" class="btn btn-outline-danger" onclick="changeDescription('Hard Skill', ['C# & C++ Programming Language', 'Java Programming Language', 'HTML Programming Language', 'CSS Programming Language', 'JavaScript Programming Language', 'Python Programming Language', 'Oracle Database', 'Unity', 'Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint', ])">Hard Skill</button>
+
+        <button type="button" class="btn btn-outline-danger" onclick="changeDescription('Soft Skill', ['Teliti', 'Jujur', 'Dapat Bekerja Sama dengan Tim', 'Dapat Berkomunikasi dengan Baik', 'Manajemen Waktu yang Baik', 'Keinginan Belajar yang Tinggi'])">Soft Skill</button> -->
+        <br>
+        <br>
+        <div class="description" id="description">
+            <h2>Hard Skill</h2>
+            <ul>
+                <li class="card-text">C# & C++ Programming Language</li>
+                <li class="card-text">Java Programming Language</li>
+                <li class="card-text">HTML Programming Language</li>
+                <li class="card-text">CSS Programming Language</li>
+                <li class="card-text">JavaScript Programming Language</li>
+                <li class="card-text">Python Programming Language</li>
+                <li class="card-text">Oracle Database</li>
+                <li class="card-text">Unity</li>
+                <li class="card-text">Microsoft Word</li>
+                <li class="card-text">Microsoft Excel</li>
+                <li class="card-text">Microsoft PowerPoint</li>
+                <li class="card-text">Canva</li>
+                <li class="card-text">Figma</li>
+                <br>
+                <br>
+                <br>
+            </ul>
+        </div>
+
+        <!-- Tambahkan lebih banyak proyek di sini jika diperlukan -->
+    </section>
+
+    <section class="projek" id="projek">
+        <div class="kartu">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-solid fa-code"></i><br><br>
+                    <h5 class="card-title">Web Developer</h5>
+                    <p class="card-text">Memiliki keahlian untuk mengelola serta mengembangkan sebuah Web</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fa-solid fa-database"></i></i><br><br>
+                    <h5 class="card-title">Database Administrator</h5>
+                    <p class="card-text">Memiliki kemampuan mengelola serta menganalisa sebuah Database</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;" href="#">
+                <div class="card-body">
+                    <i class="fa-solid fa-pen-ruler"></i></i><br><br>
+                    <h5 class="card-title">UI/UX Designer</h5>
+                    <p class="card-text">Memiliki kemampuan untuk mengembangkan antarmuka yang menarik serta responsif dan ramah pengguna.</p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Kontak</h2>
+        <p>Email: jerrysetiawan03@gmail.com</p>
+        <p>Telepon: +62 8777 6600 272</p>
+        <a href="https://wa.me/6287776600272"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:jerrysetiawan03@gmail.com?subject=Pertanyaan&body=Halo,%20saya%20mempunyai%20beberapa%20pertanyaan%20untuk%20Anda."><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://instagram.com/jerrysetiawan03?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/JerX098"><i class="fa-brands fa-github"></i></a>        
+    </section>
+
+    <!--<footer>
+        Jerry Setiawan
+    </footer>-->
+</body>
+</html>
